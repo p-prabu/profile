@@ -87,7 +87,7 @@
 <body class="antialiased text-slate-800 bg-slate-50">
 
     <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
             <div>
                 <a href="#home" class="text-xl md:text-2xl font-bold text-slate-800" aria-label="Prabu Ponnan - Active Directory Specialist">Prabu Ponnan</a>
                 <p class="text-sm text-slate-500">Active Directory Specialist</p>
@@ -98,6 +98,7 @@
                 <a href="#skills" class="nav-link font-medium pb-1" aria-label="Navigate to the Skills and Recognition section">Skills & Recognition</a>
                 <a href="#certifications" class="nav-link font-medium pb-1" aria-label="Navigate to the Certifications section">Certifications</a>
                 <a href="#education" class="nav-link font-medium pb-1" aria-label="Navigate to the Education section">Education</a>
+                <a href="#blog" class="nav-link font-medium pb-1" aria-label="Navigate to the Blog section">Blog</a>
             </div>
             <div class="flex items-center space-x-4">
                 <button id="mobile-menu-button" aria-label="Open mobile menu" class="md:hidden text-slate-600 focus:outline-none">
@@ -111,10 +112,11 @@
             <a href="#skills" class="block py-2 px-6 text-sm text-slate-700 hover:bg-slate-100" aria-label="Navigate to the Skills and Recognition section">Skills & Recognition</a>
             <a href="#certifications" class="block py-2 px-6 text-sm text-slate-700 hover:bg-slate-100" aria-label="Navigate to the Certifications section">Certifications</a>
             <a href="#education" class="block py-2 px-6 text-sm text-slate-700 hover:bg-slate-100" aria-label="Navigate to the Education section">Education</a>
+            <a href="#blog" class="block py-2 px-6 text-sm text-slate-700 hover:bg-slate-100" aria-label="Navigate to the Blog section">Blog</a>
         </div>
     </header>
 
-    <main id="resume-content" class="container mx-auto px-6 py-8 md:py-12">
+    <main id="resume-content" class="container mx-auto px-6 py-8 md:py-12 max-w-7xl">
 
         <section id="home" class="section min-h-[calc(100vh-80px)] flex items-center">
             <div class="w-full">
@@ -122,7 +124,7 @@
                     Active Directory Specialist
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check ml-4 text-indigo-500 hidden md:block"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
                 </h1>
-                <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-3xl">
+                <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-4xl">
                     Active Directory Specialist with 10+ years of experience managing enterprise-scale Windows infrastructure and identity services across Europe, US and India. Proven expertise in Active Directory, ADFS, PKI, Entra (Azure AD) Connect, and PowerShell automation. Known for leading secure AD deployments, conducting infrastructure assessments, and implementing hardening strategies to ensure high availability, compliance, and operational excellence.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-4 items-center">
@@ -144,7 +146,7 @@
             <p class="text-center text-slate-500 max-w-2xl mx-auto mb-12">
                 With over a decade of experience, my career has focused on securing and optimizing Active Directory infrastructure for global enterprises. Explore my professional timeline by clicking on each role to view my contributions and achievements.
             </p>
-            <div id="timeline-container" class="relative max-w-3xl mx-auto">
+            <div id="timeline-container" class="relative max-w-4xl mx-auto">
                 <div class="absolute left-1/2 h-full w-0.5 bg-slate-200 -translate-x-1/2"></div>
             </div>
         </section>
@@ -157,7 +159,7 @@
              <p class="text-center text-slate-500 max-w-2xl mx-auto mb-12">
                 This section showcases my core technical competencies and key achievements. The chart provides a quick visual overview of my expertise, while the awards highlight my recognized contributions to clients and the company.
             </p>
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
                 <div>
                     <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Core Competencies</h3>
                     <div class="chart-container">
@@ -176,7 +178,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award mr-3 text-indigo-500"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.896a8 8 0 1 1-6.954 0"/></svg>
                 Certifications
             </h2>
-            <div class="max-w-3xl mx-auto">
+            <div class="max-w-4xl mx-auto">
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200/50">
                     <div id="certs-container" class="space-y-4"></div>
                 </div>
@@ -188,7 +190,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap mr-3 text-indigo-500"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.838l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12v5.5A3.5 3.5 0 0 0 9.5 21a3.5 3.5 0 0 0 3.5-3.5V12"/></svg>
                 Education
             </h2>
-            <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200/50">
                     <h3 class="text-xl font-semibold text-slate-800">MBA – Entrepreneurship</h3>
                     <p class="text-slate-500 mt-1">Jain (Deemed-to-be University), India</p>
@@ -200,10 +202,30 @@
                     <p class="text-indigo-600 font-medium mt-2">2008 – 2011</p>
                 </div>
             </div>
-            <div class="max-w-3xl mx-auto mt-8">
+            <div class="max-w-4xl mx-auto mt-8">
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200/50 text-center">
                     <h3 class="text-xl font-semibold text-slate-800">Languages</h3>
                     <div id="languages-container" class="mt-4 flex flex-wrap justify-center gap-4 text-lg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section py-12 md:py-20">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text mr-3 text-indigo-500"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 2v20"/><path d="M16 8h2"/><path d="M16 12h2"/><path d="M16 16h2"/></svg>
+                My Blog Posts
+            </h2>
+            <p class="text-center text-slate-500 max-w-2xl mx-auto mb-8">
+                Dive deeper into my insights on technology and Active Directory. You can browse my latest articles right here or visit my blog directly.
+            </p>
+            <div class="text-center mb-8">
+                 <a href="https://techblog.prabuponnan.in/" target="_blank" class="text-indigo-600 font-medium py-3 px-6 rounded-lg hover:bg-indigo-50 transition-colors" aria-label="Visit Prabu Ponnan's blog">
+                    Read the Full Blog &rarr;
+                </a>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="aspect-w-16 aspect-h-9 w-full h-[600px] md:h-[800px] rounded-xl overflow-hidden shadow-lg border border-slate-200/50">
+                    <iframe src="https://techblog.prabuponnan.in/" class="w-full h-full border-0" title="Prabu Ponnan's Technology Blog"></iframe>
                 </div>
             </div>
         </section>
